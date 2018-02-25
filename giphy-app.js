@@ -3,14 +3,14 @@ $(function () {
     var gif = "";//$(this).attr("data-name"); //;
     var boing = new Audio('boing.mp3');
     $("#submit").on("click", function (event) {
-        boing.load();
-        boing.play();
         console.log('submit clikced');
         event.preventDefault();
         var newGif = $(".search-box").val().trim();
         if (gifArray.indexOf(newGif) === -1 && newGif.length > 0) {
             gifArray.push(newGif);
             renderButtons();
+            boing.load();
+            boing.play();
         };
         $('.search-box').empty();
     });
