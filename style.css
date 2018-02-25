@@ -1,0 +1,27 @@
+@font-face {
+    font-family: snes;
+    src: url(snes.ttf);
+}
+body { 
+    background: url(snes-background-image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-shadow: 4px 4px 5px black;
+    color: white;
+    font-size: 25px;
+  }
+  h1 {
+      font-size: 80px;
+      font-family: snes;
+  }
+  .search-box {
+      max-width: 450px;
+  }
+.center-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}

@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Giphtastic</title>
 </head>
-
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 button-area">
+            <div class="col-md-12 col-sm-12 mt-4">
+                <h1 class="text-center">Nintendo Gif Finder</h1>
             </div>
         </div>
         <div class="row">
-            <div class='col-md-8 gif-space'>
+            <div class="col-md-12 button-area text-center">
             </div>
-            <div class="col-md-4 new-gif">
+        </div>
+        <div class="row">
+            <div class="col-md-12 new-gif">
                 <form>
-                    <div class="form-group">
+                    <div class="form-group ">
                         <label for="formGroupExampleInput">Add New GIF</label>
                         <input type="text" class="form-control search-box" id="formGroupExampleInput" placeholder="gif search">
                     </div>
                 </form>
-                <button type="button" class="btn btn-info" id="submit">Submit</button>
+                <button type="button" class="text-center btn btn-primary" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="row ">
+        <div class='col-md-12 '>
+                <div class="gif-space "></div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src='assets/javascript/giphy.js'></script>
+    <script src='giphy-app.js'></script>
 </body>
 
 </html>
