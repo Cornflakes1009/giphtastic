@@ -2,7 +2,8 @@ $(function () {
     var gifArray = ['Donkey Kong', 'Zelda', 'Kirby', 'Pokemon', 'Metroid', 'Star Fox'];
     var gif = "";//$(this).attr("data-name"); //;
     var boing = new Audio('boing.mp3');
-    $("#submit").on("click", function (event) {
+
+    $("#newGifInput").on("submit", function (event) {
         console.log('submit clikced');
         event.preventDefault();
         var newGif = $(".search-box").val().trim();
@@ -12,7 +13,7 @@ $(function () {
             boing.load();
             boing.play();
         };
-        $('.search-box').empty();
+        $('.search-box').val('');
     });
     function loadGif() {
         boing.load();
