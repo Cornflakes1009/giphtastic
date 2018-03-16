@@ -34,12 +34,13 @@ $(function () {
             }
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div>");
-                var p = $("<p>").text("Rating: " + results[i].rating);
+                var p = $("<div>").text("Rating: " + results[i].rating);
+                p.attr('class', 'rating-box mb-3 mt-3');
                 gif = $("<img>");
                 gif.attr({
                     "src": results[i].images.fixed_height_still.url,
                     "data-state": "still",
-                    "class": "gifImage",
+                    "class": "gifImage background-box",
                     "data-animate": results[i].images.fixed_height.url,
                     "data-still": results[i].images.fixed_height_still.url
                 });
